@@ -1,25 +1,13 @@
----
-languages:
-- csharp
-- aspx-csharp
-page_type: sample
-description: "This is a sample application that you can use to follow along with the Run a RESTful API with CORS in Azure App Service tutorial."
-products:
-- azure
-- aspnet-core
-- azure-app-service
----
+To build the project command :
+- dotnet publish -c release -o ./out -r win10-x64
 
-# ASP.NET Core API sample for Azure App Service
+To run the apps :
+- copy certificate.pfx to out folder
+- cd out
+- dotnet TodoApi.dll
 
-This is a sample application that you can use to follow along with the tutorial at 
-[Run a RESTful API with CORS in Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-rest-api). 
+To change the cert :
+- Open appsettings.json
+- Update path and password cert with your cert
 
-## License
-
-See [LICENSE](https://github.com/Azure-Samples/dotnet-core-api/blob/master/LICENSE.md).
-
-## Contributing
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-  
+![image](https://user-images.githubusercontent.com/81601966/149920027-4b0ece4d-08ba-4540-aa37-47f078475ee5.png)
