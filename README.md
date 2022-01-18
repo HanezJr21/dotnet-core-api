@@ -1,5 +1,5 @@
 To build the project command :
-dotnet publish -c release -o ./out -r win10-x64
+- dotnet publish -c release -o ./out -r win10-x64
 
 To run the apps :
 - copy certificate.pfx to out folder
